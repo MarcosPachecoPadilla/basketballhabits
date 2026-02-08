@@ -1,0 +1,89 @@
+/* style.css
+   - Tag-based selectors
+   - Classes and IDs
+   - At least one Flexbox layout
+   - Clear readable code + comments
+*/
+
+/* --------------------
+   TAG-BASED SELECTORS
+--------------------- */
+
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  padding: 16px;
+}
+
+main {
+  padding: 16px;
+}
+
+h1 {
+  margin: 0;
+  color: #222;
+}
+
+p {
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  padding: 16px;
+}
+
+/* --------------------
+   CLASS SELECTORS
+--------------------- */
+
+.card {
+  background-color: white;
+  padding: 16px;
+  margin: 16px auto;
+  max-width: 900px;
+}
+
+.text-block {
+  margin: 10px 0;
+}
+
+.habit-list {
+  margin-top: 8px;
+}
+
+.workout-steps {
+  margin-top: 8px;
+}
+
+/* --------------------
+   ID SELECTORS
+--------------------- */
+
+#main-header {
+  background-color: #dddddd;
+}
+
+#details-section {
+  border: 2px solid #222;
+}
+
+/* --------------------
+   FLEXBOX (REQUIRED)
+--------------------- */
+
+.flex-container {
+  display: flex;
+  gap: 16px;
+}
+
+.flex-item {
+  background-color: #eaeaea;
+  padding: 12px;
+  flex: 1;
+}
