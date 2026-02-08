@@ -1,73 +1,89 @@
-<!-- index.html -->
-<!-- This is the homepage -->
-
-<!doctype html>
+<!-- index.html
+     Home page for the educational website.
+-->
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Basketball Training Habits</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basketball Training Habits</title>
 
-  <body>
-    <header>
-      <!-- Main title -->
-      <h1>Basketball Training Habits</h1>
+  <!-- Link the stylesheet (CSS folder) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-      <!-- Secondary header -->
-      <h2>How to train smarter during the week</h2>
-    </header>
+<body>
+  <!-- Semantic header with a UNIQUE id -->
+  <header id="main-header">
+    <h1>Basketball Training Habits</h1>
+    <h2>Simple habits that help you improve</h2>
+  </header>
 
-    <main>
-      <!-- Intro paragraph-->
-      <p>
-        I picked this topic because basketball is a big part of my life, and training
-        habits can change your level a lot. Many players train hard, but they don’t
-        always train in a smart way.
+  <main>
+    <!-- Intro section -->
+    <section id="intro-section" class="card">
+      <p class="text-block">
+        Basketball training is not only about working hard, it is also about training smart. Good habits help you improve
+        faster and stay consistent during the week.
       </p>
 
-      <!-- Second paragraph-->
-      <p>
-        In my opinion, good training is about consistency, recovery, and doing the basics
-        every day. If you only train when you feel motivated, you will be up and down.
-        I try to follow simple routines so I can improve even during busy weeks.
+      <p class="text-block">
+        In my opinion, the basics matter the most: warm-up, skill work, and recovery. If you do small work every day,
+        it adds up a lot over time.
       </p>
+    </section>
 
-      <section>
-        <!-- Section with a unordered list -->
-        <h3>Habits that help me stay consistent</h3>
+    <!-- Flexbox section (REQUIRED) -->
+    <section class="card">
+      <h3>Weekly Focus (Flexbox)</h3>
 
-        <!-- Unordered list -->
-        <ul>
-          <li>Warm up before every workout (mobility + light movement)</li>
-          <li>Train ball-handling for a few minutes daily</li>
-          <li>Take sleep seriously (it’s part of training)</li>
-          <li>Drink water and eat enough protein</li>
-        </ul>
+      <!-- This container uses Flexbox in CSS -->
+      <div class="flex-container">
+        <div class="flex-item">
+          <h4>Skill Work</h4>
+          <p class="text-block">Ball-handling + shooting, short and consistent sessions.</p>
+        </div>
 
-        <!-- Section with an ordered list -->
-        <h3>My simple workout order</h3>
+        <div class="flex-item">
+          <h4>Strength & Recovery</h4>
+          <p class="text-block">Lift 2–3 times and prioritize sleep + stretching.</p>
+        </div>
+      </div>
+    </section>
 
-        <!-- Ordered list of steps -->
-        <ol>
-          <li>Dynamic warm-up and stretching</li>
-          <li>Form shooting close to the rim</li>
-          <li>Game-speed shots (spot-up + off the dribble)</li>
-          <li>Conditioning or sprints at the end</li>
-        </ol>
+    <!-- Lists section -->
+    <section class="card">
+      <h3>Habits that help me stay consistent</h3>
 
-        <!-- Image using relative path + alt + width -->
-        <img
-          src="images/training.jpg"
-          alt="Basketball training equipment on a court"
-          width="350"
-        />
-      </section>
-    </main>
+      <!-- Unordered list -->
+      <ul class="habit-list">
+        <li>Warm up before every workout</li>
+        <li>Drink water during the day</li>
+        <li>Get enough sleep</li>
+        <li>Do a little skill work daily</li>
+      </ul>
 
-    <footer>
-      <!-- Internal link to the second page -->
-      <a href="page2.html">Read more on Page 2</a>
-    </footer>
-  </body>
+      <h3>My workout order</h3>
+
+      <!-- Ordered list -->
+      <ol class="workout-steps">
+        <li>Dynamic warm-up</li>
+        <li>Form shooting</li>
+        <li>Game-speed shots</li>
+        <li>Conditioning at the end</li>
+      </ol>
+    </section>
+
+    <!-- Image section (relative path + alt + width) -->
+    <section class="card">
+      <h3>Training Photo</h3>
+      <img src="images/training.jpg.webp" alt="Basketball training equipment on a court" width="320">
+    </section>
+  </main>
+
+  <!-- Semantic footer with internal link -->
+  <footer>
+    <a href="page2.html">Read more on Page 2</a>
+  </footer>
+</body>
 </html>
