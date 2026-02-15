@@ -1,5 +1,6 @@
 <!-- page2.html
-     Second page for the educational website.
+     This is my second page.
+     It talks more about recovery.
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -8,45 +9,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Basketball Training Details</title>
 
-  <!-- Link the stylesheet (CSS folder) -->
+  <!-- CSS file -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <!-- Semantic header (no extra id needed here) -->
+
+  <!-- Skip link -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Header -->
   <header>
     <h1>Training Details</h1>
     <h2>Recovery and staying healthy</h2>
+
+    <!-- Navigation -->
+    <nav aria-label="Site navigation">
+      <a href="index.html">Home</a>
+      <a href="page2.html" aria-current="page">Training details</a>
+    </nav>
   </header>
 
-  <main>
-    <!-- Unique id on a section (REQUIRED: IDs) -->
+  <!-- Main content -->
+  <main id="main-content">
+
+    <!-- Section with unique id -->
     <section id="details-section" class="card">
       <p class="text-block">
-        Recovery is very important because if you never rest, your body will feel heavy and you can get injured easier.
-        Stretching after training and sleeping enough helps you stay consistent.
+        Recovery is important because if you never rest,
+        your body will feel tired and heavy.
       </p>
 
       <p class="text-block">
-        I also think it helps to track your workouts. Even small notes like how you felt or what you practiced can help
-        you improve over time.
+        Stretching and sleeping helps you stay consistent.
       </p>
     </section>
 
-    <!-- Another section using the same class (shows class reused) -->
+    <!-- Another section -->
     <section class="card">
       <h3>Quick recovery habits</h3>
+
       <ul class="habit-list">
         <li>Stretch after practice</li>
         <li>Drink water</li>
-        <li>Sleep 7–9 hours</li>
+        <li>Sleep 7 to 9 hours</li>
       </ul>
     </section>
+
   </main>
 
-  <!-- Semantic footer with internal link -->
+  <!-- Footer -->
   <footer>
-    <a href="index.html">Back to Home</a>
+    <a href="index.html">Back to Home page</a>
   </footer>
+
 </body>
 </html>

@@ -1,6 +1,8 @@
 <!-- index.html
-     Home page for the educational website.
+     Home page for educational website.
+     AFTER accessibility fixes.
 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,82 +10,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Basketball Training Habits</title>
 
-  <!-- Link the stylesheet (CSS folder) -->
+  <!-- link css -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <!-- Semantic header with a UNIQUE id -->
+
+  <!-- main header -->
   <header id="main-header">
     <h1>Basketball Training Habits</h1>
     <h2>Simple habits that help you improve</h2>
   </header>
 
   <main>
-    <!-- Intro section -->
+
+    <!-- intro section -->
     <section id="intro-section" class="card">
       <p class="text-block">
-        Basketball training is not only about working hard, it is also about training smart. Good habits help you improve
-        faster and stay consistent during the week.
+        Basketball training is not only about working hard, it is also about training smart.
+        Good habits help you improve faster during the week.
       </p>
 
       <p class="text-block">
-        In my opinion, the basics matter the most: warm-up, skill work, and recovery. If you do small work every day,
-        it adds up a lot over time.
+        I think the basics matter the most. If you do small work every day,
+        it helps a lot over time.
       </p>
     </section>
 
-    <!-- Flexbox section (REQUIRED) -->
+    <!-- flex section -->
     <section class="card">
-      <h3>Weekly Focus (Flexbox)</h3>
+      <h3>Weekly Focus</h3>
 
-      <!-- This container uses Flexbox in CSS -->
       <div class="flex-container">
         <div class="flex-item">
           <h4>Skill Work</h4>
-          <p class="text-block">Ball-handling + shooting, short and consistent sessions.</p>
+          <p class="text-block">
+            Ball-handling and shooting every week.
+          </p>
         </div>
 
         <div class="flex-item">
-          <h4>Strength & Recovery</h4>
-          <p class="text-block">Lift 2–3 times and prioritize sleep + stretching.</p>
+          <h4>Strength and Recovery</h4>
+          <p class="text-block">
+            Lift weights and sleep enough.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- Lists section -->
+    <!-- habits section -->
     <section class="card">
       <h3>Habits that help me stay consistent</h3>
 
-      <!-- Unordered list -->
       <ul class="habit-list">
-        <li>Warm up before every workout</li>
-        <li>Drink water during the day</li>
-        <li>Get enough sleep</li>
-        <li>Do a little skill work daily</li>
+        <li>Warm up before workout</li>
+        <li>Drink water</li>
+        <li>Sleep enough</li>
+        <li>Practice skills daily</li>
       </ul>
 
       <h3>My workout order</h3>
 
-      <!-- Ordered list -->
       <ol class="workout-steps">
-        <li>Dynamic warm-up</li>
+        <li>Warm-up</li>
         <li>Form shooting</li>
         <li>Game-speed shots</li>
-        <li>Conditioning at the end</li>
+        <li>Conditioning</li>
       </ol>
     </section>
 
-    <!-- Image section (relative path + alt + width) -->
+    <!-- IMAGE WITH ALT (FIXED) -->
     <section class="card">
       <h3>Training Photo</h3>
-      <img src="images/training.jpg.webp" alt="Basketball training equipment on a court" width="320">
+      <img src="images/training.jpg.webp"
+           alt="Basketball training equipment placed on a basketball court"
+           width="320">
     </section>
+
   </main>
 
-  <!-- Semantic footer with internal link -->
   <footer>
-    <a href="page2.html">Read more on Page 2</a>
+    <a href="page2.html">Training details</a>
   </footer>
+
 </body>
 </html>
