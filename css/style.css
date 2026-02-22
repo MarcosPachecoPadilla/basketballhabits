@@ -1,19 +1,23 @@
 /* style.css
-  my custom css
-  bootstrap does most layout now
+   my custom css
+   bootstrap does most layout now
 */
 
 /* tag selectors */
+
 body {
   background-color: #f4f4f4;
   font-family: Arial, sans-serif;
 }
+
+/* simple header background */
 
 header {
   background-color: #d9d9d9;
 }
 
 /* simple custom section style (instead of fighting bootstrap) */
+
 .card-box {
   background-color: #ffffff;
   border-radius: 10px;
@@ -22,37 +26,23 @@ header {
 }
 
 /* little box inside weekly focus */
+
 .mini-box {
-  background-color: #eeeeee;
-  border-radius: 10px;
-  padding: 14px;
-  border: 1px solid #d6d6d6;
+  background-color: #f1f1f1;
+  padding: 12px;
+  border-radius: 8px;
 }
 
-.text-block {
-  line-height: 1.6;
-  margin-bottom: 10px;
+/* custom heading spacing */
+
+h1, h2, h3 {
+  margin-bottom: 12px;
 }
 
-/* list spacing */
-.habit-list,
-.workout-steps {
-  margin-top: 8px;
-  margin-bottom: 0;
-}
+/* custom footer tweak (new commit) */
 
-/* id selector example (still using id, but not too crazy) */
-#details-section {
-  border: 2px solid #222;
-}
-
-/* responsive media query (keeps it nice on small screens) */
-@media (max-width: 600px) {
-  body {
-    font-size: 16px;
-  }
-
-  .card-box {
-    padding: 12px;
-  }
+footer {
+  background-color: #e9ecef;
+  margin-top: 30px;
+  padding: 20px 0;
 }
