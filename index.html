@@ -1,97 +1,119 @@
 <!-- index.html
-     Home page for educational website.
-     AFTER accessibility fixes.
+  home page for my website
 -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Basketball Training Habits</title>
 
-  <!-- link css -->
-  <link rel="stylesheet" href="css/style.css">
+  <!-- bootstrap first -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- my css after bootstrap -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+  <!-- header -->
+  <header id="main-header" class="py-4">
+    <div class="container text-center">
+      <h1 class="mb-1">Basketball Training Habits</h1>
+      <h2 class="h5 mb-3">Simple habits that help you improve</h2>
 
-  <!-- main header -->
-  <header id="main-header">
-    <h1>Basketball Training Habits</h1>
-    <h2>Simple habits that help you improve</h2>
+      <!-- nav links -->
+      <nav>
+        <a class="btn btn-outline-dark btn-sm me-2" href="index.html">Home</a>
+        <a class="btn btn-dark btn-sm" href="page2.html">Training details</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main class="py-4">
+    <div class="container">
+      <!-- intro -->
+      <section id="intro-section" class="card-box mb-4">
+        <p class="text-block">
+          Basketball training is not only about working hard, it is also about training smart.
+          Good habits help you improve faster during the week.
+        </p>
 
-    <!-- intro section -->
-    <section id="intro-section" class="card">
-      <p class="text-block">
-        Basketball training is not only about working hard, it is also about training smart.
-        Good habits help you improve faster during the week.
-      </p>
+        <p class="text-block">
+          I think the basics matter the most. If you do small work every day, it helps a lot over time.
+        </p>
+      </section>
 
-      <p class="text-block">
-        I think the basics matter the most. If you do small work every day,
-        it helps a lot over time.
-      </p>
-    </section>
+      <!-- weekly focus (bootstrap grid instead of flexbox now) -->
+      <section class="card-box mb-4">
+        <h3 class="h5 mb-3">Weekly Focus</h3>
 
-    <!-- flex section -->
-    <section class="card">
-      <h3>Weekly Focus</h3>
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <div class="mini-box h-100">
+              <h4 class="h6 mb-2">Skill Work</h4>
+              <p class="mb-0">Ball-handling and shooting every week.</p>
+            </div>
+          </div>
 
-      <div class="flex-container">
-        <div class="flex-item">
-          <h4>Skill Work</h4>
-          <p class="text-block">
-            Ball-handling and shooting every week.
-          </p>
+          <div class="col-12 col-md-6">
+            <div class="mini-box h-100">
+              <h4 class="h6 mb-2">Strength and Recovery</h4>
+              <p class="mb-0">Lift weights and sleep enough.</p>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="flex-item">
-          <h4>Strength and Recovery</h4>
-          <p class="text-block">
-            Lift weights and sleep enough.
-          </p>
-        </div>
+      <!-- habits + workout -->
+      <section class="card-box mb-4">
+        <h3 class="h5">Habits that help me stay consistent</h3>
+
+        <ul class="habit-list">
+          <li>Warm up before workout</li>
+          <li>Drink water</li>
+          <li>Sleep enough</li>
+          <li>Practice skills daily</li>
+        </ul>
+
+        <h3 class="h5 mt-3">My workout order</h3>
+
+        <ol class="workout-steps">
+          <li>Warm-up</li>
+          <li>Form shooting</li>
+          <li>Game-speed shots</li>
+          <li>Conditioning</li>
+        </ol>
+      </section>
+
+      <!-- image -->
+      <section class="card-box mb-4">
+        <h3 class="h5 mb-3">Training Photo</h3>
+
+        <img
+          class="img-fluid rounded"
+          src="images/training.jpg.webp"
+          alt="Basketball training equipment on a court"
+        />
+      </section>
+
+      <!-- bottom link -->
+      <div class="text-center">
+        <a class="btn btn-primary" href="page2.html">Read more on Page 2</a>
       </div>
-    </section>
-
-    <!-- habits section -->
-    <section class="card">
-      <h3>Habits that help me stay consistent</h3>
-
-      <ul class="habit-list">
-        <li>Warm up before workout</li>
-        <li>Drink water</li>
-        <li>Sleep enough</li>
-        <li>Practice skills daily</li>
-      </ul>
-
-      <h3>My workout order</h3>
-
-      <ol class="workout-steps">
-        <li>Warm-up</li>
-        <li>Form shooting</li>
-        <li>Game-speed shots</li>
-        <li>Conditioning</li>
-      </ol>
-    </section>
-
-    <!-- IMAGE WITH ALT (FIXED) -->
-    <section class="card">
-      <h3>Training Photo</h3>
-      <img src="images/training.jpg.webp"
-           alt="Basketball training equipment placed on a basketball court"
-           width="320">
-    </section>
-
+    </div>
   </main>
 
-  <footer>
-    <a href="page2.html">Training details</a>
+  <footer class="py-4">
+    <div class="container text-center">
+      <small>Made for my web dev class</small>
+    </div>
   </footer>
 
+  <!-- bootstrap js (not required but ok to have) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

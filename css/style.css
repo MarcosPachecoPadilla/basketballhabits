@@ -1,120 +1,58 @@
 /* style.css
-   This file controls how the website looks.
-   I added accessibility improvements.
+  my custom css
+  bootstrap does most layout now
 */
 
-/* Basic page style */
-
+/* tag selectors */
 body {
   background-color: #f4f4f4;
   font-family: Arial, sans-serif;
-  margin: 0;
-  color: #111;
-  line-height: 1.6;
 }
 
 header {
-  text-align: center;
-  padding: 16px;
-}
-
-main {
-  padding: 16px;
-}
-
-h1 {
-  margin: 0;
-  color: #222;
-}
-
-footer {
-  text-align: center;
-  padding: 16px;
-  background-color: #222;
-}
-
-footer a {
-  color: white;
-}
-
-/* Make links clear */
-
-a {
-  color: #0b57d0;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Show focus when using keyboard */
-
-a:focus-visible {
-  outline: 3px solid #0b57d0;
-}
-
-/* Skip link style */
-
-.skip-link {
-  position: absolute;
-  left: -999px;
-  top: 10px;
-  background: #0b57d0;
-  color: white;
-  padding: 8px;
-}
-
-.skip-link:focus {
-  left: 10px;
-}
-
-/* Card layout */
-
-.card {
-  background-color: white;
-  padding: 16px;
-  margin: 16px auto;
-  max-width: 900px;
-}
-
-.text-block {
-  margin: 10px 0;
-}
-
-/* Unique sections */
-
-#main-header {
   background-color: #dddddd;
 }
 
+/* simple custom section style (instead of fighting bootstrap) */
+.card-box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 16px;
+  border: 1px solid #cfcfcf;
+}
+
+/* little box inside weekly focus */
+.mini-box {
+  background-color: #eeeeee;
+  border-radius: 10px;
+  padding: 14px;
+  border: 1px solid #d6d6d6;
+}
+
+.text-block {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* list spacing */
+.habit-list,
+.workout-steps {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+/* id selector example (still using id, but not too crazy) */
 #details-section {
   border: 2px solid #222;
 }
 
-/* Flexbox layout */
-
-.flex-container {
-  display: flex;
-  gap: 16px;
-}
-
-.flex-item {
-  background-color: #eaeaea;
-  padding: 12px;
-  flex: 1;
-}
-
-/* Media query for small screens */
-
-@media (max-width: 700px) {
-
-  .flex-container {
-    flex-direction: column;
+/* responsive media query (keeps it nice on small screens) */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
   }
 
-  img {
-    max-width: 100%;
-    height: auto;
+  .card-box {
+    padding: 12px;
   }
-
 }
